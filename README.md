@@ -1,1 +1,1 @@
-visit site at: https://alishpawn1.github.io/short-code/
+visit site at: https://alishpawn.github.io/short-code/
