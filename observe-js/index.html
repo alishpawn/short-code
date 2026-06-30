@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Observe js</title>
+    <title>Observe JS - MutationObserver Demo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="location-popup" style="display: none;">This is a popup!</div>
+    <div class="container">
+        <h1>MutationObserver Demo</h1>
+        <p class="desc">Click the button to toggle the popup. The MutationObserver watches the popup's display style and adds <code>overflow-hidden</code> to the body when visible.</p>
+
+        <button class="toggle-btn" id="togglePopup">Toggle Popup</button>
+
+        <div class="location-popup" style="display: none;">
+            <div class="popup-content">
+                <h2>Hello! I'm a popup</h2>
+                <p>This popup's display style is being observed by MutationObserver.</p>
+                <p class="status">Body class: <span id="bodyStatus">none</span></p>
+                <button class="close-btn" id="closePopup">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

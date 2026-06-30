@@ -4,423 +4,403 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>all together</title>
+    <title>UI Shortcodes</title>
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
-    <section class="list py-5 my-5">
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <div class="main-title">
-                <h1 class="title text-center mb-4">All together</h1>
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-code"></i>
+                Shortcodes
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <span class="nav-link" id="itemCount">0 components</span>
+                    </li>
+                </ul>
             </div>
-            <div class="search-box mb-4">
+        </div>
+    </nav>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-header">
+                <h1 class="gallery-title">UI Components</h1>
+                <p class="gallery-subtitle">A collection of reusable UI components built with HTML, CSS &amp; JavaScript
+                </p>
+            </div>
+
+            <div class="search-box">
                 <div class="row justify-content-center">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-8">
                         <div class="input-group">
                             <span class="input-group-text"><i class="fas fa-search"></i></span>
                             <input type="text" class="form-control" id="searchInput" placeholder="Search components...">
+                            <button class="btn btn-outline-secondary" type="button" id="clearSearch">
+                                <i class="fas fa-times"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row g-4" id="itemsContainer">
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="https://alishpawn1.github.io/404-collection/" title="404 collection">
-                            <div class="image">
-                                <img src="image/404 collection.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">404 collection</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="Accordion-bootstrap/index.html" title="Accordion bootstrap">
-                            <div class="image">
-                                <img src="image/faq.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">Accordion bootstrap</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="Accordion-raw/index.html" title="Accordion raw">
-                            <div class="image">
-                                <img src="image/faq.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">Accordion raw</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="Add_readmore/index.html" title="Add readmore">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">Add readmore</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="Auto generate spy-scroll/index.html" title="Auto generate spy-scroll">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">Auto generate spy-scroll</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="auto-scroll-countnumber/index.html" title="auto-scroll-countnumber">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">auto-scroll-countnumber</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="auto-scroll-countnumber-diffrent-div/index.html" title="auto-scroll-countnumber-diffrent-div">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">auto-scroll-countnumber-diffrent-div</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="auto-scroll-progressbar/index.html" title="auto-scroll-progressbar">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">auto-scroll-progressbar</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="banner-content-animination/index.html" title="banner content animination">
-                            <div class="image">
-                                <img src="image/banner-slider.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">banner content animination</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="before-after-background/index.html" title="before-after-background">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">before-after-background</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="before-after-image/index.html" title="before-after-image">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">before-after-image</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="Bottom-to-top/index.html" title="Bottom to top">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">Bottom to top</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="button/index.html" title="button">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">button</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="check-box/index.html" title="checkbox">
-                            <div class="image">
-                                <img src="image/checkbox.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">checkbox</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="checkbox/index.html" title="checkbox">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">checkbox</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="clone-header.html/index.html" title="clone header">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">clone header</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="nav-menu-fade/index.html" title="Fade nav menu item">
-                            <div class="image">
-                                <img src="image/nav-menu.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">Fade nav menu item</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="faq-raw/index.html" title="faq raw">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">faq raw</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="hamburger-list/index.html" title="hamburger list">
-                            <div class="image">
-                                <img src="image/hamburger-list.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">hamburger list</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="hover-slider/index.html" title="hover slider">
-                            <div class="image">
-                                <img src="image/hover-slider.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">hover slider</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="masonry/index.html" title="masonry">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">masonry</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="megamenu/megamenu.html" title="megamenu">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">megamenu</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="model-raw/index.html" title="model raw">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">model raw</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="observe-js/index.html" title="observe js">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">observe js</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="splide_page_counting/index.html" title="splide page counting">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">splide page counting</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="Splide_process-bar/index.html" title="Splide process bar">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">Splide process bar</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="tab-bootstrap/index.html" title="tab bootstrap">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">tab bootstrap</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="Tab-raw/index.html" title="Tab raw">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">Tab raw</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="Three-col-box/index.html" title="Three col box">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">Three col box</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="word-changing-smoooth-width/index.html" title="word changing smooth width">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">word changing smooth width</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <a href="word-changing-step-by-step/index.html" title="word changing step by step">
-                            <div class="image">
-                                <img src="image/" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="title">word changing step by step</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+
+            <div class="filter-chips" id="filterChips">
+                <span class="chip active" data-category="all">All</span>
+                <span class="chip" data-category="navigation">Navigation</span>
+                <span class="chip" data-category="content">Content</span>
+                <span class="chip" data-category="media">Media</span>
+                <span class="chip" data-category="ui">UI Elements</span>
+                <span class="chip" data-category="animation">Animation</span>
+                <span class="chip" data-category="slider">Slider</span>
+            </div>
+
+            <div class="row g-4" id="itemsContainer"></div>
+
+            <div class="no-results" id="noResults">
+                <i class="fas fa-search"></i>
+                <h3>No components found</h3>
+                <p>Try adjusting your search or filter</p>
             </div>
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <footer class="gallery-footer">
+        <div class="container">
+            <p class="mb-0"><i class="fas fa-code"></i> Shortcodes Collection</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Search functionality
+        const components = [
+            {
+                title: '404 collection',
+                url: 'https://alishpawn.github.io/404-collection/',
+                categories: ['all'],
+                tags: ['External'],
+                external: true,
+                img: 'image/404 collection.png'
+            },
+            {
+                title: 'Accordion bootstrap',
+                url: 'Accordion-bootstrap/index.html',
+                categories: ['content', 'navigation'],
+                tags: ['Bootstrap', 'JS'],
+                img: 'image/faq.png'
+            },
+            {
+                title: 'Accordion raw',
+                url: 'Accordion-raw/index.html',
+                categories: ['content'],
+                tags: ['Vanilla JS'],
+                img: 'image/faq raw.png'
+            },
+            {
+                title: 'Add readmore',
+                url: 'Add_readmore/index.html',
+                categories: ['ui'],
+                tags: ['jQuery'],
+                img: 'image/Add readmore.png'
+            },
+            {
+                title: 'Auto generate spy-scroll',
+                url: 'Auto generate spy-scroll/index.html',
+                categories: ['animation', 'navigation'],
+                tags: ['Scroll', 'jQuery'],
+                img: 'image/Auto generate spy-scroll.png'
+            },
+            {
+                title: 'auto-scroll-countnumber',
+                url: 'auto-scroll-countnumber/index.html',
+                categories: ['animation'],
+                tags: ['Counter', 'jQuery'],
+                img: 'image/auto-scroll-countnumber.png'
+            },
+            {
+                title: 'auto-scroll-countnumber-diffrent-div',
+                url: 'auto-scroll-countnumber-diffrent-div/index.html',
+                categories: ['animation'],
+                tags: ['Counter', 'jQuery'],
+                img: 'image/auto-scroll-countnumber-diffrent-div.png'
+            },
+            {
+                title: 'auto-scroll-progressbar',
+                url: 'auto-scroll-progressbar/index.html',
+                categories: ['animation'],
+                tags: ['Progress', 'jQuery'],
+                img: 'image/auto-scroll-progressbar.png'
+            },
+            {
+                title: 'banner content animination',
+                url: 'banner-content-animination/index.html',
+                categories: ['media', 'slider'],
+                tags: ['Slider', 'Splide'],
+                img: 'image/banner-slider.png'
+            },
+            {
+                title: 'before-after-background',
+                url: 'before-after-background/index.html',
+                categories: ['media'],
+                tags: ['Compare', 'jQuery'],
+                img: 'image/before-after-background.png'
+            },
+            {
+                title: 'before-after-image',
+                url: 'before-after-image/index.html',
+                categories: ['media'],
+                tags: ['Compare', 'Vanilla JS'],
+                img: 'image/before-after-image.png'
+            },
+            {
+                title: 'Bottom to top',
+                url: 'Bottom-to-top/index.html',
+                categories: ['navigation'],
+                tags: ['Scroll', 'jQuery'],
+                icon: 'fa-arrow-up'
+            },
+            {
+                title: 'check-box',
+                url: 'check-box/index.html',
+                categories: ['ui'],
+                tags: ['Checkbox', 'CSS Only'],
+                img: 'image/checkbox.png'
+            },
+            {
+                title: 'Button',
+                url: 'button/index.html',
+                categories: ['ui'],
+                tags: ['Button', 'CSS Only'],
+                img: 'image/Button.png'
+            },
+            {
+                title: 'clone header',
+                url: 'clone-header.html/index.html',
+                categories: ['navigation'],
+                tags: ['jQuery'],
+                icon: 'fa-clone'
+            },
+            {
+                title: 'Fade nav menu item',
+                url: 'nav-menu-fade/index.html',
+                categories: ['navigation'],
+                tags: ['Navigation', 'Vanilla JS'],
+                img: 'image/Fade nav menu item.png'
+            },
+            {
+                title: 'faq raw',
+                url: 'faq-raw/index.html',
+                categories: ['content'],
+                tags: ['FAQ', 'Vanilla JS'],
+                img: 'image/faq raw.png'
+            },
+            {
+                title: 'gallery',
+                url: 'gallery/index.html',
+                categories: ['media'],
+                tags: ['Gallery', 'CSS', 'JS'],
+                img: 'image/gallery.png'
+            },
+            {
+                title: 'hamburger list',
+                url: 'hamburger-list/index.html',
+                categories: ['navigation', 'ui'],
+                tags: ['Hamburger', 'CSS'],
+                img: 'image/hamburger-list.png'
+            },
+            {
+                title: 'hover slider',
+                url: 'hover-slider/index.html',
+                categories: ['media', 'slider'],
+                tags: ['Slider', 'Splide'],
+                img: 'image/hover-slider.png'
+            },
+            {
+                title: 'masonry',
+                url: 'masonry/index.html',
+                categories: ['layout'],
+                tags: ['Layout', 'JS'],
+                img: 'image/masonry.png'
+            },
+            {
+                title: 'megamenu',
+                url: 'megamenu/megamenu.html',
+                categories: ['navigation'],
+                tags: ['Mega Menu', 'jQuery'],
+                img: 'image/megamenu.png'
+            },
+            {
+                title: 'model raw',
+                url: 'model-raw/index.html',
+                categories: ['ui'],
+                tags: ['Modal', 'jQuery'],
+                icon: 'fa-window-maximize'
+            },
+            {
+                title: 'observe js',
+                url: 'observe-js/index.html',
+                categories: ['animation'],
+                tags: ['Observer', 'Vanilla JS'],
+                img: 'image/observe js.png'
+            },
+            {
+                title: 'splide page counting',
+                url: 'splide_page_counting/index.html',
+                categories: ['slider'],
+                tags: ['Slider', 'Splide'],
+                img: 'image/splide page counting.png'
+            },
+            {
+                title: 'Splide process bar',
+                url: 'Splide_process-bar/index.html',
+                categories: ['slider'],
+                tags: ['Slider', 'Progress'],
+                icon: 'fa-sliders-h'
+            },
+            {
+                title: 'tab bootstrap',
+                url: 'tab-bootstrap/index.html',
+                categories: ['content'],
+                tags: ['Tabs', 'Bootstrap'],
+                icon: 'fa-table'
+            },
+            {
+                title: 'Tab raw',
+                url: 'Tab-raw/index.html',
+                categories: ['content'],
+                tags: ['Tabs', 'jQuery'],
+                img: 'image/Tab raw.png'
+            },
+            {
+                title: 'Three col box',
+                url: 'Three-col-box/index.html',
+                categories: ['layout'],
+                tags: ['Grid', 'Cards'],
+                icon: 'fa-th'
+            },
+            {
+                title: 'word changing smooth width',
+                url: 'word-changing-smoooth-width/index.html',
+                categories: ['animation', 'typography'],
+                tags: ['Text', 'jQuery'],
+                icon: 'fa-font'
+            },
+            {
+                title: 'word changing step by step',
+                url: 'word-changing-step-by-step/index.html',
+                categories: ['animation', 'typography'],
+                tags: ['Typewriter', 'jQuery'],
+                icon: 'fa-keyboard'
+            }
+        ];
+
+        function randomGradient() {
+            const h1 = Math.floor(Math.random() * 360);
+            const h2 = (h1 + 30 + Math.floor(Math.random() * 60)) % 360;
+            return `linear-gradient(135deg, hsl(${h1}, 70%, 55%) 0%, hsl(${h2}, 65%, 50%) 100%)`;
+        }
+
+        components.forEach(c => {
+            if (!c.img && !c.gradient) c.gradient = randomGradient();
+        });
+
         const searchInput = document.getElementById('searchInput');
         const itemsContainer = document.getElementById('itemsContainer');
-        const items = itemsContainer.querySelectorAll('.col-md-3');
+        const noResults = document.getElementById('noResults');
+        const itemCount = document.getElementById('itemCount');
+        const chips = document.querySelectorAll('.chip');
+        const clearBtn = document.getElementById('clearSearch');
 
-        searchInput.addEventListener('input', function() {
-            const searchTerm = this.value.toLowerCase().trim();
+        let activeCategory = 'all';
+        let searchTerm = '';
+
+        function renderItems(data) {
+            itemsContainer.innerHTML = data.map(c => {
+                const cats = c.categories.concat(['all']).join(',');
+                const imageHtml = c.img
+                    ? `<img src="${c.img}" alt="${c.title}" loading="lazy">`
+                    : `<div class="item-img-placeholder" style="background: ${c.gradient};"><i class="fas ${c.icon}"></i></div>`;
+                const overlayHtml = c.external
+                    ? `<span class="item-live-link"><i class="fas fa-external-link-alt"></i> Live</span>`
+                    : `<span class="item-preview"><i class="fas fa-eye"></i> Preview</span>`;
+                const tagsHtml = c.tags.map(t =>
+                    `<span class="item-tag${t === 'jQuery' || t === 'JS' || t === 'Vanilla JS' ? ' item-tag-js' : ''}">${t}</span>`
+                ).join('');
+
+                return `<div class="col-xl-3 col-lg-4 col-md-6" data-category="${cats}">
+                    <div class="item">
+                        <a href="${c.url}" title="${c.title}">
+                            <div class="item-image">
+                                ${imageHtml}
+                                <div class="item-overlay">
+                                    ${overlayHtml}
+                                </div>
+                            </div>
+                            <div class="item-body">
+                                <div class="item-tags">${tagsHtml}</div>
+                                <h3 class="item-title">${c.title}</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        function filterItems() {
+            const items = itemsContainer.querySelectorAll('.col-xl-3');
+            let visibleCount = 0;
 
             items.forEach(item => {
-                const title = item.querySelector('.title');
-                const titleText = title ? title.textContent.toLowerCase() : '';
+                const title = item.querySelector('.item-title').textContent.toLowerCase();
+                const categories = item.dataset.category || '';
 
-                if (titleText.includes(searchTerm)) {
+                const matchesSearch = title.includes(searchTerm);
+                const matchesCategory = activeCategory === 'all' || categories.includes(activeCategory);
+
+                if (matchesSearch && matchesCategory) {
                     item.style.display = '';
+                    visibleCount++;
                 } else {
                     item.style.display = 'none';
                 }
+            });
+
+            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+            itemCount.textContent = visibleCount + ' component' + (visibleCount !== 1 ? 's' : '');
+        }
+
+        renderItems(components);
+        filterItems();
+
+        searchInput.addEventListener('input', function () {
+            searchTerm = this.value.toLowerCase().trim();
+            filterItems();
+        });
+
+        clearBtn.addEventListener('click', function () {
+            searchInput.value = '';
+            searchTerm = '';
+            filterItems();
+            searchInput.focus();
+        });
+
+        chips.forEach(chip => {
+            chip.addEventListener('click', function () {
+                chips.forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+                activeCategory = this.dataset.category;
+                filterItems();
             });
         });
     </script>

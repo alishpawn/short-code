@@ -44,3 +44,10 @@ body {
     background-color: red; /* Color of the slider */
     cursor: ew-resize; /* Cursor style */
 }
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

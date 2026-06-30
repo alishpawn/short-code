@@ -1,16 +1,116 @@
-.custom-body-class {
-    background-color: lightblue; /* Just for visual confirmation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.container h1 {
+    font-size: 1.75rem;
+    color: #212529;
+    margin-bottom: 12px;
+}
+
+.desc {
+    color: #6c757d;
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 auto 32px;
+}
+
+.desc code {
+    background: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.toggle-btn {
+    background: #6c5ce7;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.toggle-btn:hover {
+    background: #5a4bd1;
+    transform: translateY(-1px);
+}
+
 .location-popup {
-    width: 200px;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid #ccc;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    display: none; /* Initially hidden */
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
 }
-.overflow-hidden{
-    overflow: hidden !important;
+
+.popup-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.popup-content h2 {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    color: #212529;
+}
+
+.popup-content p {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.status {
+    font-size: 0.85rem;
+}
+
+.status span {
+    font-weight: 600;
+    color: #6c5ce7;
+}
+
+.close-btn {
+    margin-top: 16px;
+    background: #e9ecef;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.close-btn:hover {
+    background: #dee2e6;
 }

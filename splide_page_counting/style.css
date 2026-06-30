@@ -1,18 +1,44 @@
-.banner{
-    height: 400px;
-    background-color: var(--bg-color);
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: #f8f9fa;
+    padding: 40px 0;
 }
-.banner-slide .splide__pagination__page:before {
-    counter-increment: pagination-num;
-    content: "0" counter( pagination-num );
-    color: #fff;
-    font-weight: 300;
-    font-size: 16px;  
-    transition:none;
+
+.count-slide-section {
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+.main-title {
+    margin-bottom: 32px;
+}
+
+.main-title h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #212529;
+}
+
 .slide-counter {
     text-align: center;
-    font-size: 18px;
-    color: #333;
-    margin-top: 10px;
+    font-size: 1rem;
+    color: #6c757d;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.splide__slide {
+    padding: 60px 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.splide__slide h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.splide__slide p {
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
 }

@@ -3,18 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clone Header</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
             <nav>
-                <div class="logo"></div>
-                <div class="nav-item"></div>
-                <div class="header-btn"></div>
+                <div class="logo">
+                    <a href="#">Logo</a>
+                </div>
+                <div class="nav-item">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="header-btn">
+                    <a href="#" class="btn">Login</a>
+                    <a href="#" class="btn btn-primary">Sign Up</a>
+                </div>
             </nav>
         </div>
     </header>
-    
+
+    <div class="mobile-nav"></div>
+
+    <section class="content">
+        <div class="container">
+            <h1>Header Clone Demo</h1>
+            <p>Resize your browser to 767px or less to see the header buttons cloned into the mobile area below.</p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
